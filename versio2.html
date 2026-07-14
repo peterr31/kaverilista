@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Kaverli lista V-2</title>
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <a href="index.html">VERSIO 1</a>
+                    <a href="#">VERSIO 2</a>
+                </nav>
+            </header>
+        <main>
+            <h1>Kaverilista V-2</h1>
+
+            <input type="text" id="nimi_input" placeholder="Syötä nimi:">
+            
+            <button class="kaveriBTN" onclick="lisää_kaveri_v2()">Lisää kaveri</button>
+            <button class="kaveriBTN" onclick="poista_kaveri()">Poista kaveri</button>
+            <button class="kaveriBTN" onclick="järjestä_kaverit()">Järjestä kaverit</button>
+            <button class="kaveriBTN" onclick="tyhjennä_kaveri_lista()">Tyhjennä lista</button>
+
+            <ul id="kaveri_lista"></ul>
+
+            <script src="kaverilista.js"></script>
+        </main>
+    </body>
+</html>

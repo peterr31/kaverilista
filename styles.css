@@ -1,0 +1,73 @@
+
+:root {
+  --teksti: #333333;
+  --tausta: #eeeeee;
+  --tekstit-vaalea: #eeeeee;
+  --bg-dark: #444444;
+  --highlight : #008b8b;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--teksti);
+}
+
+main {
+    text-align: center;
+    color: var(--tekstit-vaalea);
+}
+
+header {
+    text-decoration: none;
+}
+
+
+header nav a {
+    color: var(--tekstit-vaalea);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 0.8em;
+    border: 3px solid var(--highlight);
+    border-radius: 3px;
+    background-color: var(--bg-dark);
+}
+
+header nav a:hover {
+    background-color: var(--highlight);
+}
+
+input {
+    font-size: 1.3em;
+    border: 3px solid var(--highlight);
+    border-radius: 5px;
+    background-color: #333333;
+    color: var(--tekstit-vaalea);
+}
+
+.kaveriBTN {
+    padding: 10px;
+    background-color: #333333;
+    color: var(--tekstit-vaalea);
+    border: 2px solid var(--highlight);
+    border-radius: 5px;
+}
+
+.kaveriBTN:hover {
+    background-color: var(--highlight);
+}
+
+#kaveri_lista {
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#kaveri_lista li {
+    font-size: 1.3em;
+}
+
+#nimi-prompt {
+    padding: 10px 20px;
+    font-size: 1.3em;
+}
