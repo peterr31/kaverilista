@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 :root {
   --teksti: #333333;
@@ -10,6 +11,7 @@
 body {
     background-color: var(--bg-dark);
     color: var(--teksti);
+    font-family: 'Outfit', sans-serif;
 }
 
 main {
@@ -34,10 +36,12 @@ header nav a {
 }
 
 header nav a:hover {
+    opacity: 0.5;
     background-color: var(--highlight);
 }
 
 input {
+    width: 300px;
     font-size: 1.3em;
     border: 3px solid var(--highlight);
     border-radius: 5px;
@@ -51,6 +55,7 @@ input {
     color: var(--tekstit-vaalea);
     border: 2px solid var(--highlight);
     border-radius: 5px;
+    font-size: 15px;
 }
 
 .kaveriBTN:hover {
@@ -70,4 +75,16 @@ input {
 #nimi-prompt {
     padding: 10px 20px;
     font-size: 1.3em;
+}
+
+.buttons {
+    padding-top: 5px;
+}
+
+.selected {
+    background-color: var(--highlight);
+}
+
+li {
+    padding-bottom: 10px;
 }

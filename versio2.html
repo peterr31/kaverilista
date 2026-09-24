@@ -10,19 +10,20 @@
         <header>
                 <nav>
                     <a href="index.html">VERSIO 1</a>
-                    <a href="#">VERSIO 2</a>
+                    <a href="#" class="selected">VERSIO 2</a>
                 </nav>
             </header>
         <main>
             <h1>Kaverilista V-2</h1>
 
-            <input type="text" id="nimi_input" placeholder="Syötä nimi:">
+            <input type="text" id="nimi_input" placeholder="Syötä nimi:" onfocus="resetoi_placeholder()">
             
-            <button class="kaveriBTN" onclick="lisää_kaveri_v2()">Lisää kaveri</button>
-            <button class="kaveriBTN" onclick="poista_kaveri()">Poista kaveri</button>
-            <button class="kaveriBTN" onclick="järjestä_kaverit()">Järjestä kaverit</button>
-            <button class="kaveriBTN" onclick="tyhjennä_kaveri_lista()">Tyhjennä lista</button>
-
+            <div class="buttons">
+                <button class="kaveriBTN" onclick="lisää_kaveri_v2()">Lisää kaveri</button>
+                <button class="kaveriBTN" onclick="poista_kaveri()">Poista kaveri</button>
+                <button class="kaveriBTN" onclick="järjestä_kaverit()">Järjestä lista</button>
+                <button class="kaveriBTN" onclick="tyhjennä_kaveri_lista()">Tyhjennä lista</button>
+            </div>
             <ul id="kaveri_lista"></ul>
 
             <script src="kaverilista.js"></script>
